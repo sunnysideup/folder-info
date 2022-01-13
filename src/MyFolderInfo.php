@@ -32,7 +32,7 @@ class MyFolderInfo {
     {
         $data = self::run($path);
 
-        return self::human_filesize(self::SizeOfFilesRaw($path));
+        return self::HumanFileSize(self::SizeOfFilesRaw($path));
     }
 
     public static function CountOfFilesRaw (string $path) : int
@@ -49,7 +49,7 @@ class MyFolderInfo {
         return number_format(self::CountOfFilesRaw($path));
     }
 
-    public static function run (string $path) : array
+    public static function Run (string $path) : array
     {
         $path = realpath($path);
         if(! isset(self::$data[$path])) {
@@ -72,7 +72,7 @@ class MyFolderInfo {
         return self::$data[$path];
     }
 
-    public static function human_filesize($bytes, $decimals = 2) : string
+    public static function HumanFileSize($bytes, $decimals = 2) : string
     {
         $size = array('B','kB','MB','GB','TB','PB','EB','ZB','YB');
         $factor = floor((strlen($bytes) - 1) / 3);
