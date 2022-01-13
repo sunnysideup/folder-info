@@ -6,22 +6,22 @@ you can independently use any of these calls as you see fit
 $path = dirname(__FILE__);
 
 echo '<h1>Count of Files</h1>';
-echo Sunnysideup\FolderInfo\MyFolderInfo::CountOfFilesRaw($path);
+echo Sunnysideup\FolderInfo\MyFolderInfo::countOfFilesRaw($path);
 echo ' OR ';
-echo Sunnysideup\FolderInfo\MyFolderInfo::CountOfFilesHuman($path);
+echo Sunnysideup\FolderInfo\MyFolderInfo::countOfFilesHuman($path);
 
 echo '<h1>Size of Files</h1>';
-echo Sunnysideup\FolderInfo\MyFolderInfo::SizeOfFilesRaw($path);
+echo Sunnysideup\FolderInfo\MyFolderInfo::sizeOfFilesRaw($path);
 echo ' OR ';
-echo Sunnysideup\FolderInfo\MyFolderInfo::SizeOfFilesHuman($path);
+echo Sunnysideup\FolderInfo\MyFolderInfo::sizeOfFilesHuman($path);
 
 echo '<h1>Last Updated</h1>';
-echo Sunnysideup\FolderInfo\MyFolderInfo::LastUpdatedRaw($path);
+echo Sunnysideup\FolderInfo\MyFolderInfo::lastUpdatedRaw($path);
 echo ' OR ';
-echo Sunnysideup\FolderInfo\MyFolderInfo::LastUpdatedHuman($path);
+echo Sunnysideup\FolderInfo\MyFolderInfo::lastUpdatedHuman($path);
 
 echo '<h1>Raw Data</h1>';
-$data = Sunnysideup\FolderInfo\MyFolderInfo::Run($path);
+$data = Sunnysideup\FolderInfo\MyFolderInfo::run($path);
 print_r($data);
 ```
 
