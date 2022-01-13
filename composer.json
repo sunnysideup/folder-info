@@ -1,0 +1,27 @@
+{
+    "name": "sunnysideup/folder-info",
+    "description": "Get recursive information about a folder or file in an efficient manner",
+    "keywords": [
+        "folder",
+        "filesize",
+        "filetime",
+        "count",
+        "files",
+        "file"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Nicolaas Francken",
+            "email": "modules@sunnysideup.co.nz",
+            "role": "lead developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Sunnysideup\\FolderInfo\\": "src/"
+        }
+    }
+}
