@@ -21,7 +21,7 @@ echo ' OR ';
 echo Sunnysideup\FolderInfo\MyFolderInfo::LastUpdatedHuman($path);
 
 echo '<h1>Raw Data</h1>';
-$data = Sunnysideup\FolderInfo\MyFolderInfo::run($path);
+$data = Sunnysideup\FolderInfo\MyFolderInfo::Run($path);
 print_r($data);
 ```
 
