@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunnysideup\FolderInfo\MyFolderInfo;
+namespace Sunnysideup\FolderInfo;
 
 
 class MyFolderInfo {
